@@ -44,7 +44,7 @@
 //     printf("Digite um numero real :");
 //     scanf("%f", &floatNumber3);
     
-//     printf("a:%i \nb:%f \nc:%f \n", (intNumber1 * 2) * (intNumber2 / 2), (intNumber1 * 3) + floatNumber3, floatNumber3 * floatNumber3 * floatNumber3 );
+//     printf("a:%f \nb:%f \nc:%f \n", (intNumber1 * 2) + (float)(intNumber2 / 2), (intNumber1 * 3) + floatNumber3, floatNumber3 * floatNumber3 * floatNumber3 );
     
 //     return 0;
 // }
