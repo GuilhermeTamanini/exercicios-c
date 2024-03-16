@@ -72,11 +72,11 @@
 // 5
 
 // 6
-//  int main(void) {
-//      char letra;
+// int main(void) {
+//      char letra[50];
 
 //     printf("Digite M ou F : ");
-//     scanf("%c", &letra);
+//     scanf("%s", &*letra);
 
 //     if(strcmp(letra, "M") == 0) {
 //         printf("Sexo masculino");
@@ -153,7 +153,6 @@
 
 //11
 int main(void) {
-    
 
     return 0;
 }
