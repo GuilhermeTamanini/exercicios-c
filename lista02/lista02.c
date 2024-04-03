@@ -40,8 +40,9 @@
 //  int main(void) {
 //      int n;
 
-//     printf("Digite um numero: ");
-//     scanf("%i", &n);
+//      printf("Digite um numero: ");
+//      scanf("%i", &n);
+//      fflush(stdin);
 
 //     if(n % 2 == 0) {
 //         printf("O numero %i e par", n);
@@ -72,8 +73,33 @@
 // 5
 
 // 6
+//  int main(void){
+// 	// variáveis
+// 	char sexo;
+	
+// 	// entrada
+// 	printf("Digite o sexo (f/m): ");
+// 	scanf("%c",&sexo);
+// 	fflush(stdin);
+	
+// 	// processamento e saída
+// 	switch(sexo){
+// 		case 'f': case 'F':
+// 			printf("Feminino\n");
+// 			break;
+// 		case 'm': case 'M':
+// 			printf("Masculino\n");
+// 			break;
+// 		default:
+// 			printf("Sexo invalido\n");
+// 	}
+	
+// 	return 0;
+// }
+
+// 7
 // int main(void) {
-//      char letra[50];
+//     char letra[50];
 
 //     printf("Digite M ou F : ");
 //     scanf("%s", &*letra);
@@ -89,7 +115,61 @@
 //     return 0;
 // }
 
-// 7
+// int main() {
+//     char character;
+
+//     printf("Digite uma letra de A a Z: ");
+//     scanf("%c", &character);
+    
+//     if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u') {
+//         printf("%c é uma vogal.\n", character);
+//     } else {
+//         printf("%c é uma consoante.\n", character);
+//     }
+
+//     return 0;
+// }
+
+//8
+int main(void) {
+    int n1, n2, n3;
+
+    printf("Digite um numero: ");
+    scanf("%i", &n1);
+    fflush(stdin);
+    printf("Digite outro numero: ");
+    scanf("%i", &n2);
+    fflush(stdin);
+    printf("Digite outro numero: ");
+    scanf("%i", &n3);
+    fflush(stdin);
+
+    if(n1 > n2 && n1 > n3) {
+        if(n2> n3) {
+            printf("%i,%i,%i",n1,n2,n3);
+        } else {
+            printf("%i,%i,%i",n1,n3,n2);
+        }
+    } else if(n2 > n1 && n2 > n3) {
+        if(n1 > n3) {
+            printf("%i,%i,%i",n2,n1,n3);
+        } else {
+            printf("%i,%i,%i",n2,n3,n1);
+        } 
+    } else if(n3 > n1 && n3 > n2) {
+        if(n1 > n2) {
+            printf("%i,%i,%i",n3,n1,n2);
+        } else {
+            printf("%i,%i,%i",n3,n2,n1);
+        }
+    } else if(n1 == n2 && n1 == n3){
+        printf("Todos os numeros sao iguais");
+    } else if(n1 == n2) {
+        
+    }
+    
+    return 0;
+}
 
 // 9
 // int main(void){
